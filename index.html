@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manas Chan</title>
+<meta name="description" content="Manas Chan: computer engineering student at Columbia, minoring in philosophy. Projects, photographs, and notes.">
+<script>document.documentElement.classList.remove("no-js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-home">
+<header class="site-header">
+  <a class="brand" href="index.html">Manas Chan</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="photography.html">Photography</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-media">
+      <img src="images/hero/garda-2400.jpg"
+           srcset="images/hero/garda-1200.jpg 1200w, images/hero/garda-2400.jpg 2400w"
+           sizes="100vw" alt="A hiker on a grassy slope high above Lake Garda, mountains across the water" fetchpriority="high">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-name">Manas Chan</h1>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="section with-note intro" aria-label="Introduction">
+      <p class="lead">I was born and raised in NYC, and currently a sophomore at Columbia University studying Computer Engineering and Philosophy. Lately, I can&rsquo;t stop thinking about all the things AI agents could do. When I&rsquo;m not doing that, you&rsquo;ll find me flying drones, competing in triathlons, playing pickup basketball, or thinking about philosophical questions on top of mountains.</p>
+      <aside class="note reading" data-reading aria-label="Currently reading"></aside>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Selected projects</h2>
+        <a href="projects.html">All projects</a>
+      </div>
+      <ul class="index" data-projects="featured"></ul>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Recent photographs</h2>
+      </div>
+    </section>
+  </div>
+  <div class="strip-wrap">
+    <div class="strip" data-strip></div>
+    <button class="strip-arrow strip-arrow--prev is-hidden" type="button" aria-label="Scroll photos left" data-strip-prev>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
+    </button>
+    <button class="strip-arrow strip-arrow--next" type="button" aria-label="Scroll photos right" data-strip-next>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg>
+    </button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>Manas Chan, 2026</span>
+  <nav aria-label="Elsewhere">
+    <a href="mailto:mc5269@columbia.edu">Email</a>
+    <a href="https://github.com/goatchan28" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/manas-chan/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
+</footer>
+<dialog class="lightbox" aria-label="Photo viewer">
+  <div class="lightbox-bar">
+    <button type="button" data-prev>Previous</button>
+    <button type="button" data-next>Next</button>
+    <button type="button" data-close>Close</button>
+  </div>
+  <div class="lightbox-stage"><img class="lightbox-img" alt=""></div>
+  <div class="lightbox-foot mono"><span class="lightbox-caption"></span><span class="lightbox-count"></span></div>
+</dialog>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
